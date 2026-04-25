@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devika | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <style>
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 80vh;
+            gap: 2rem;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 2px solid var(--border-color);
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+        }
+        .hero-image img:hover {
+            filter: grayscale(0%);
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                margin-top: 2rem;
+            }
+            .hero-image img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Devika.</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="certification.html">Certification</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero animate-on-scroll">
+            <div class="hero-content">
+                <h2>Hello, I'm</h2>
+                <h1>Devika</h1>
+                <p>A passionate professional dedicated to crafting beautiful, functional, and impactful digital experiences.</p>
+                <a href="projects.html" class="btn">View My Work</a>
+                <a href="contact.html" class="btn" style="margin-left: 10px;">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="DEVIKA.jpeg" alt="Devika">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Devika. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

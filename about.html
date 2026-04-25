@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Devika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <style>
+        .about-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .skill-item {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            border-radius: 4px;
+        }
+        .resume-actions {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Devika.</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="certification.html">Certification</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-section animate-on-scroll">
+            <h1>About Me</h1>
+            <p>I am a driven and detail-oriented professional with a strong foundation in building impactful projects. I thrive on challenges and constantly seek to improve my skills.</p>
+            <p>My journey has been defined by a commitment to excellence and a passion for learning new technologies.</p>
+            
+            <div class="resume-actions animate-on-scroll">
+                <a href="Devika_B_Resume.pdf" target="_blank" class="btn">View Resume</a>
+                <a href="Devika_B_Resume.pdf" download class="btn">Download Resume</a>
+            </div>
+
+            <h2 style="margin-top: 4rem;">Core Skills</h2>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Problem Solving</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Communication</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Devika. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

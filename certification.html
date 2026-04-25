@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification | Devika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .cert-card {
+            background: var(--bg-secondary);
+            border: 1px dashed var(--border-color);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .cert-card:hover {
+            border-style: solid;
+            border-color: var(--accent-color);
+        }
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Devika.</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="certification.html">Certification</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="animate-on-scroll">
+            <h1 style="text-align: center;">Certifications</h1>
+            <p style="text-align: center;">A showcase of my professional certifications and continuous learning achievements.</p>
+            
+            <div class="cert-grid">
+                <!-- Placeholder 1 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon">📄</div>
+                    <h3>Certificate Title</h3>
+                    <p>Issuing Organization</p>
+                    <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1.5rem;">View Certificate</a>
+                </div>
+                <!-- Placeholder 2 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon">📄</div>
+                    <h3>Certificate Title</h3>
+                    <p>Issuing Organization</p>
+                    <a href="#" class="btn" style="padding: 0.5rem 1rem; font-size: 0.8rem; margin-top: 1.5rem;">View Certificate</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Devika. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
